@@ -1,4 +1,4 @@
-<meta charset="UTF-8" />
+<meta charset="UTF-8">
 <script>
     /*
     PROBLEMA: ITENS DA LISTA DE COMPRAS
@@ -12,10 +12,25 @@
 
     //ENTRADA
 
+    let f1 = prompt(`Informe a primeira fruta:`);
+    let f2 = prompt(`Informe a segunda fruta:`);
+    let f3 = prompt(`Informe a terceira fruta:`);
+
+    let b1 = prompt(`Informe a primeira bebida:`);
+    let b2 = prompt(`Informe a segunda bebida:`);
+    let b3 = prompt(`Informe a terceira bebida:`);
+
 
     //PROCESSAMENTO
 
+    let frutas = [f1, f2, f3];
+    let bebidas = [b1, b2, b3];
+    let lista = frutas.concat(bebidas);
 
     //SAÍDA
+
+    alert(`As frutas que foram compradas são: ${frutas.join(`, `)} .`);
+    alert(`As bebidas que foram compradas são: ${bebidas.join(`, `)} .`);
+    alert(`A lista de compras foi ${lista.join(`, `)} .`);
 
 </script>

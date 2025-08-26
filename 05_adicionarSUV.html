@@ -1,4 +1,4 @@
-<meta charset="UTF-8" />
+<meta charset="UTF-8">
 <script>
     /*
     PROBLEMA: ADICIONAR SUV
@@ -10,10 +10,19 @@
 
     //ENTRADA
 
+  let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+  
+    let adicionar = prompt(`Qual carro você quer adicionar na lista?`);
 
     //PROCESSAMENTO
 
+    let listaA = carrosSUV.join(`, `);
+    carrosSUV.push(adicionar);
+    let listaN = carrosSUV.join(`, `);
 
     //SAÍDA
+
+    alert(`A lista antiga de carros era: ${listaA}`);
+    alert(`A lista nova de carros é: ${listaN}`);
 
 </script>

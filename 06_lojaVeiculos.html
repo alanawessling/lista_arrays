@@ -14,10 +14,60 @@
 
     //ENTRADA
 
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
+
+    let v1 = prompt(`Informe o primeiro carro que deseja adicionar na lista:`);
+    let t1 = prompt(`Informe o tipo do carro: (SUV, Sedan ou Hatch)`).toUpperCase();
+
+    let v2 = prompt(`Informe o segundo carro que deseja adicionar na lista:`);
+    let t2 = prompt(`Informe o tipo do carro: (SUV, Sedan ou Hatch)`).toUpperCase();
+
+    let v3 = prompt(`Informe o terceiro carro que deseja adicionar na lista:`);
+    let t3 = prompt(`Informe o tipo do carro: (SUV, Sedan ou Hatch)`).toUpperCase();
 
     //PROCESSAMENTO
 
+    if (t1 == `SUV`){
+        carrosSUV.push(v1);
+    }
+    else if (t1 == `SEDAN`){
+        carrosSedan.push(v1);
+    }
+     else if (t1 == `HATCH`){
+        carrosHatch.push(v1);
+    }
+
+
+
+      if (t2 == `SUV`){
+        carrosSUV.push(v2);
+    }
+    else if (t2 == `SEDAN`){
+        carrosSedan.push(v2);
+    }
+     else if (t2 == `HATCH`){
+        carrosHatch.push(v2);
+    }
+
+
+
+      if (t3 == `SUV`){
+        carrosSUV.push(v3);
+    }
+    else if (t3 == `SEDAN`){
+        carrosSedan.push(v3);
+    }
+     else if (t3 == `HATCH`){
+        carrosHatch.push(v3);
+    }
+
 
     //SAÍDA
+
+alert(`A lista de carros Suv agora é: ${carrosSUV.join(`, `)}`);
+alert(`A lista de carros Sedan agora é: ${carrosSedan.join(`, `)}`);
+alert(`A lista de carros Hatch agora é: ${carrosHatch.join(`, `)}`);
 
 </script>

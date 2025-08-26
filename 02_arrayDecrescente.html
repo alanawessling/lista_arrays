@@ -9,9 +9,52 @@
     //ENTRADA
 
 
+    let n1 = Number(prompt(`Informe o primeiro número:`));
+    let n2 = Number(prompt(`Informe o segundo número:`));
+    let n3 = Number(prompt(`Informe o terceiro número:`));
+
     //PROCESSAMENTO
 
+    let numeros = [n2]
 
+    if (n1 > n2 && n2 > n3) {
+    numeros.push(n3)
+    numeros.unshift(n1)
+
+    alert(numeros.join(` - `));
+}
+ else if (n2 > n1 && n1 > n3) {
+    numeros.push(n1, n3)
+
+    alert(numeros.join(` - `));
+}
+ else if (n3 > n2 && n2 > n1) {
+    numeros.unshift(n3)
+    numeros.push(n1)
+
+    alert(numeros.join(` - `));
+}
+ else if (n2 > n3 && n3 > n1) {
+    numeros.push(n3, n1)
+
+    alert(numeros.join(` - `));
+}
+ else if (n3 > n1 && n1 > n2) {
+    numeros.unshift(n3, n1)
+
+    alert(numeros.join(` - `));
+} 
+else if (n1 > n3 && n3 > n2) {
+    numeros.unshift(n1, n3)
+
+    alert(numeros.join(` - `));
+}
+else {
+    numeros.unshift(n1, n3)
+
+    alert(numeros.join(` - `));
+}
+   
     //SAÍDA
 
 </script>

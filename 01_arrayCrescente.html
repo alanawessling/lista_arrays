@@ -9,7 +9,28 @@
     //ENTRADA
 
 
+    let n1 = Number(prompt(`Informe um número:`));
+    let n2 = Number(prompt(`Informe outro número:`));
+
     //PROCESSAMENTO
+
+ let numeros = [n1];
+
+    if (n2 > n1) {
+        numeros.push(n2);
+
+        alert(numeros.join(` - `));
+    }
+    else if (n1 > n2) {
+        numeros.unshift(n2);
+
+        alert(numeros.join(` - `));
+    }
+    else {
+        numeros.push(n2);
+
+        alert(numeros.join(` - `));
+    }
 
 
     //SAÍDA
